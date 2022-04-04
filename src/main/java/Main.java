@@ -1,9 +1,22 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Triangle triangle1=new Triangle(5,5,2);
-        Triangle triangle2=new Triangle("5","5","5");
+
+        System.out.println("Enter first side of triangle");
+
+        Scanner scanner = new Scanner(System.in);
+        int firstSide = scanner.nextInt();
+        System.out.println("Enter second side of triangle");
+        int secondSide = scanner.nextInt();
+        System.out.println("Enter third side of triangle");
+        int thirdSide = scanner.nextInt();
+
+
+        Triangle triangle1 = new Triangle(firstSide, secondSide, thirdSide);
+
         System.out.println(triangle1.answer());
-        System.out.println(triangle2.answer());
+
 
     }
 }
